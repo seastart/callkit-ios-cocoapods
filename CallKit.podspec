@@ -32,8 +32,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   
   # 依赖本地库文件
-  s.vendored_frameworks = 'CallKit/Depend/*.framework'
-  # 依赖远程库
+  s.vendored_frameworks = 'CallKit/*.framework'
+  # 依赖远程网络请求库
   s.dependency 'AFNetworking', '>= 4.0.0'
+  # 依赖远程RTC组件库
   s.dependency 'RTCEngineKit'
 end
